@@ -9,6 +9,12 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 CHROMA_DB_PATH = "./chroma_db_v2"
 COLLECTION_NAME_BOOK_1 = "hp_book_1"
 DATA_FILE_BOOK_1 = "./data/Harry Potter (1) E A Pedra Filosofal.pdf"
+# Caminho do SimpleDocumentStore (nodes pais) persistido pela ingestão
+DOCSTORE_PATH = "./docstore.json"
+
+# Controles de exibição (1 = SIM, 0 = NÃO)
+HABILITAR_TEXTO_INICIALIZACAO = 0
+HABILITAR_TEXTO_DEBUG_RERANK = 0
 
 def setup_settings():
     """Carrega variáveis de ambiente e configura globalmente o Gemini (LLM e Embeddings)."""
@@ -30,4 +36,4 @@ def setup_settings():
     from llama_index.llms.gemini import Gemini
     
     # LLM Cloud: Gemini para raciocinar e gerar respostas com base nos textos recuperados.
-    Settings.llm = Gemini(model="models/gemini-2.5-flash")
+    Settings.llm = Gemini(model="models/gemini-2.5-flash", temperature=0.0)

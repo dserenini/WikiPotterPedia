@@ -3,9 +3,10 @@ hpenv/
 venv/
 env/
 
-# Bancos de Dados Vetoriais (ChromaDB)
+# Bancos de Dados Vetoriais (ChromaDB) e Docstores
 chroma_db/
 chroma_db_v2/
+docstore.json
 
 # Variáveis de Ambiente (Chaves da API)
 .env
