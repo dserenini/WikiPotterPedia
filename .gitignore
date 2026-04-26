@@ -1,0 +1,39 @@
+# Ambientes Virtuais
+hpenv/
+venv/
+env/
+
+# Bancos de Dados Vetoriais (ChromaDB)
+chroma_db/
+chroma_db_v2/
+
+# Variáveis de Ambiente (Chaves da API)
+.env
+
+# Arquivos de Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Arquivos do OS
+.DS_Store
+Thumbs.db
