@@ -3,6 +3,9 @@ hpenv/
 venv/
 env/
 
+# Pastas
+data/
+
 # Bancos de Dados Vetoriais (ChromaDB) e Docstores
 chroma_db/
 chroma_db_v2/
